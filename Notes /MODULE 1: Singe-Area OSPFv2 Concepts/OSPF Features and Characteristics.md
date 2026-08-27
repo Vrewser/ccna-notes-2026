@@ -1,4 +1,4 @@
-#1. Singe-Area OSPFv2 Concepts
+#1.1 Singe-Area OSPFv2 Concepts
 
 ## Introduction to OSPF
 __Open Shortest Path First (OSPF)__
