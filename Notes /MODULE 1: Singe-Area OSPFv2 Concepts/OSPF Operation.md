@@ -37,3 +37,7 @@
    * The receiving router (R2) of the Hello Packet and adds the sending router (R1)
 4. Two-Way State
    * R1 also receives R2's Hello packet and registers its RID to its list of OSPF neighbors.
+   * If the two adjacent neighbors are connected over a point-to-point link, they immediately turn from two-way state into ExStart State.
+   * Connected over common ethernet network, a DR and a BDR must be elected.
+5. Election of DR and BDR.
+   * As stated.
