@@ -17,7 +17,7 @@
 ---
 
 ## Link-State Updates
-![LSUs Contain LSAs]<img width="661" height="643" alt="image" src="https://github.com/user-attachments/assets/5926105f-c77a-49af-8e98-d8a2c4fa81b6" />
+<img width="661" height="643" alt="image" src="https://github.com/user-attachments/assets/5926105f-c77a-49af-8e98-d8a2c4fa81b6" />
 
 ---
 
