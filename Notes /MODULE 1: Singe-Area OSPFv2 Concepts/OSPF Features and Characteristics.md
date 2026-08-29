@@ -2,8 +2,12 @@
 
 ## Introduction to OSPF
 __Open Shortest Path First (OSPF)__
+
+
 <img width="734" height="273" alt="image" src="https://github.com/user-attachments/assets/50117f45-6c7d-4091-8848-f0d274eb11f4" />
 <br>
+
+
 
 1. OSPFv2 is used for IPv4 networks.
 2. OSPFv3 is used for IPV6 networks.
@@ -65,8 +69,12 @@ __Dijkstra's algorithm__
   5.Choose the best route.
     -Best paths for each network are offered to the IP routing table.
     -Best paths are determined by the amount of lowest cost to get to the destination.
+
+    
     <img width="639" height="606" alt="image" src="https://github.com/user-attachments/assets/20587840-8fa7-4d4d-9219-6c52bc7b26c6" />
     <br>
+
+    
 
 ## Single-Area and Multiarea OSPF
   *Single-Area OSPF
