@@ -1,8 +1,9 @@
-#1.1 Singe-Area OSPFv2 Concepts
+# 1.1 Singe-Area OSPFv2 Concepts
 
 ## Introduction to OSPF
 __Open Shortest Path First (OSPF)__
 <img width="734" height="273" alt="image" src="https://github.com/user-attachments/assets/50117f45-6c7d-4091-8848-f0d274eb11f4" />
+<br>
 
 1. OSPFv2 is used for IPv4 networks.
 2. OSPFv3 is used for IPV6 networks.
@@ -14,7 +15,7 @@ __Dijkstra's algorithm__
 -Responsible for computing the cost of each route.
 
 ## Components of OSPF
-###Routing Protocol Messages
+###R outing Protocol Messages
 -It uses 5 distinct packet types.
   1. Hello Packet
      -Similar to DHCP discover, but it also maintains connections.
@@ -27,7 +28,7 @@ __Dijkstra's algorithm__
   5. Link-State Acknowledgement
      -Confirms the update.
 
-###Data Structures
+### Data Structures
 -OSPF uses 3 main data structures.
   1. Adjacency Database
      -Neighbor Table.
@@ -43,11 +44,11 @@ __Dijkstra's algorithm__
      -Each router is unique and has its own way and location for packets.
      `show ip route`
 
-###Algorithm
+### Algorithm
 -After data structures, the router builds the routing table using the algorithm that's based on Dijkstra to find the shortest possible path.
 -The best possible route is then stored into an "SPF tree."
 
-##Link-State Operation
+## Link-State Operation
   1.Establish Neighbor Adjacencies
     -A router must have OSPF enabled first
     -OSPF-enabled routers must recognize each other first so that they can share information.
@@ -65,8 +66,9 @@ __Dijkstra's algorithm__
     -Best paths for each network are offered to the IP routing table.
     -Best paths are determined by the amount of lowest cost to get to the destination.
     <img width="639" height="606" alt="image" src="https://github.com/user-attachments/assets/20587840-8fa7-4d4d-9219-6c52bc7b26c6" />
+    <br>
 
-##Single-Area and Multiarea OSPF
+## Single-Area and Multiarea OSPF
   *Single-Area OSPF
     -All routers are in one area.
     `Best practice to use is area 0.`
@@ -75,7 +77,7 @@ __Dijkstra's algorithm__
     -_All areas must connect to the backbone area (area 0)._
     `For example, 10.0.0.2 sits between area 0 and area 2. What's the area called between the areas? **An Area Border Router**.`
 
-##Multiarea OSPF
+## Multiarea OSPF
 -Recalculations of the database are kept in an area until updated.
 -Too many routers in one area can cause CPU overload, it's best to partition the routers into smaller and manageable areas.
 
@@ -85,7 +87,7 @@ __Dijkstra's algorithm__
 -LSA flooding is stopped per boundaries of the area with multiarea OSPF.
 
 
-##OSPFv3
+## OSPFv3
 -Used mostly for IPv6.
 -Supports both IPv4 and IPv6.
 
@@ -94,5 +96,5 @@ __Dijkstra's algorithm__
 *Subnet Mask
   -Referred to as the prefix-length.
 
-###OSPFv2 and OSPFv3 Data Structures
+### OSPFv2 and OSPFv3 Data Structures
 <img width="847" height="424" alt="Screenshot 2026-08-27 222815" src="https://github.com/user-attachments/assets/ba85a6f7-5d2b-4e3c-8063-60ec063d6300" />
